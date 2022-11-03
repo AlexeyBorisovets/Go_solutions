@@ -6,8 +6,9 @@ type Vendor struct {
 	ID          string `bson,json:"id"`
 	Name        string `bson,json:"name"`
 	Password    string `bson,json:"password"`
-	Balance     uint   `bson,json:"accessToken"`
-	AccessToken string `bson,json:"accessToken"` // ???
+	Balance     uint   `bson,json:"balance"`
+	AccessToken string `bson,json:"accessToken"`
+	UserType    string `bson,json:"usertype"`
 }
 
 //CозданиеНовогоПродавца()
@@ -21,6 +22,7 @@ type Consumer struct {
 	Password    string `bson,json:"password"`
 	AccessToken string `bson,json:"accessToken"` // ???
 	Balance     uint   `bson,json:"accessToken"`
+	UserType    string `bson,json:"usertype"`
 }
 
 //CозданиеНовогоПокупателя()
